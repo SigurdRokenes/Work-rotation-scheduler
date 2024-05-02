@@ -1,6 +1,6 @@
 
 
-class simulator:
+class Simulator:
     def __init__(self, shifts, workers):
         self.shifts = shifts
         self.workers = workers
@@ -13,3 +13,5 @@ class simulator:
             for worker in self.workers:
                 schedule.append((shift, worker))
         return schedule
+    
+    
